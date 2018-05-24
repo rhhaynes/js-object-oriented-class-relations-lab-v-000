@@ -30,6 +30,6 @@ class Trip {
     this.passengerId = passenger.id;
     store.trips.push(this);
   }
-  driver(){ return store.drivers.find( d => ) }
-  passenger(){ return store.passengers.find() }
+  driver(){ return store.drivers.find( d => d.id === this.driverId ) }
+  passenger(){ return store.passengers.find( p => p.id === this.passengerId ) }
 }
