@@ -12,7 +12,7 @@ class Driver {
     store.drivers.push(this)
   }
   trips(){}
-  passengers(){}
+  passengers(){store.filter(d => this.id === d.id)}
 }
 
 let passengerId = 0;
