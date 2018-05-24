@@ -18,8 +18,8 @@ class Passenger {
     this.name = name;
     store.passengers.push(this);
   }
-  trips(){}
-  drivers(){}
+  trips(){ return store.trips.filter( t => t.passengerId === this.id ) }
+  drivers(){ return this.trips().map( t => t.driver() ) }
 }
 
 let tripId = 0;
