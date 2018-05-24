@@ -20,4 +20,6 @@ class Passenger {
     this.id   = ++passengerId;
     this.name = name;
   }
+  trips(){}
+  drivers(){}
 }
