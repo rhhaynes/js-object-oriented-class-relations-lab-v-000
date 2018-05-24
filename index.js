@@ -11,7 +11,7 @@ class Driver {
     this.name = name;
     store.drivers.push(this);
   }
-  trips(){ store.trips.filter( t => t.driverId ) }
+  trips(){ store.trips.filter( t => t.driverId === this.id ) }
   passengers(){ this.trips.map( t => t.passenger() )
 }
 
