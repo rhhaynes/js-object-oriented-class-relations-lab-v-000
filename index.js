@@ -12,7 +12,9 @@ class Driver {
     store.drivers.push(this);
   }
   trips(){}
-  passengers = store.filter(d => this.id === d.id);
+  passengers(){
+    store.filter(d => this.id === d.id);
+  }
 }
 
 let passengerId = 0;
