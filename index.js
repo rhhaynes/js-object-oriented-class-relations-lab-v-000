@@ -6,7 +6,7 @@ const store = {
 
 let driverId = 0;
 class Driver {
-  constructor(name) {
+  constructor(name){
     this.id   = ++driverId;
     this.name = name;
   }
@@ -14,3 +14,10 @@ class Driver {
   passengers(){}
 }
 
+let passengerId = 0;
+class Passenger {
+  constructor(name){
+    this.id   = ++passengerId;
+    this.name = name;
+  }
+}
