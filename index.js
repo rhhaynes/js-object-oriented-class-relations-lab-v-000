@@ -11,7 +11,7 @@ class Driver {
     this.name = name;
     store.drivers.push(this);
   }
-  trips(){}
+  trips(){ store.trips.filter( t => this.id === t.driverId ) }
   passengers(){
     store.trips.filter( p => this.id === p.driver.id );
   }
